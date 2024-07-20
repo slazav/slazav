@@ -2,7 +2,9 @@
 
 #### Low-temperature physics
 
-* Measurement system
+* Measurement system (was used in low-temperature experiments in Helsinki and
+  Lancaster)
+
   * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send commands to local and remote devices and programs without any knowledge about connection details
   * [graphene](https://github.com/slazav/graphene) -- A simple time series database based on BerkleyDB
   * [pico_osc](https://github.com/slazav/pico_osc) -- SPP interface for Picoscope 4000 oscilloscope (can be connected to device2). Programs for manipulating recorded signals (probably, should be moved to a separate package)
@@ -31,6 +33,10 @@
   * [LIM](https://github.com/slazav/LIM) -- Larkin-Imry-Ma state toy simulations
 
 #### Maps
+
+Maps can be viewed online [here](https://nakarte.me/#m=3/45.33670/73.47656&l=E/Q/Z).
+More information and downloading different formats [here](https://slazav.xyz/maps/index.htm).
+
 * [mapsoft2](https://github.com/slazav/mapsoft2) -- Mapsoft project
 * [mapsoft2-libs](https://github.com/slazav/mapsoft2-libs) -- libraries for mapsoft2 and other projects
 * [map_hr](https://github.com/slazav/map_hr) -- Sources for mountain maps
