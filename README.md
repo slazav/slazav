@@ -15,7 +15,7 @@
   * [tcl-exp](https://github.com/slazav/tcl-exp) -- TCL/TK based GUI for experiments
   * [tcl-xblt](https://github.com/slazav/tcl-xblt) -- tcl-xblt library from ROTA group
   * [tcl-gpib](https://github.com/slazav/tcl-gpib) -- tcl-gpib library from ROTA group (I'm not using it because Device2 server directly works with libgpib)
-  * [tcl-bf2gr](https://github.com/slazav/tcl-bf2gr) -- parse Bluefors logfiles, put data into graphene database
+  * [tcl-bf2gr](https://github.com/slazav/tcl-bf2gr) -- parse Bluefors/CryoMech/Magnicon logfiles, put data into graphene database
 
 * Data processing
   * [py_fit_res](https://github.com/slazav/py_fit_res) -- python library for fitting linear and non-linear resonances
@@ -35,7 +35,7 @@
 #### Maps
 
 Maps can be viewed online [here](https://nakarte.me/#m=3/45.33670/73.47656&l=E/Q/Z).
-More information and downloading different formats [here](https://slazav.xyz/maps/index.htm).
+More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.xyz/maps/index.htm).
 
 * [mapsoft2](https://github.com/slazav/mapsoft2) -- Mapsoft project
 * [mapsoft2-libs](https://github.com/slazav/mapsoft2-libs) -- libraries for mapsoft2 and other projects
@@ -50,6 +50,10 @@ More information and downloading different formats [here](https://slazav.xyz/map
 * [alt2deb](https://github.com/slazav/alt2deb) -- Scripts for building deb packages
 
 All Github projects: https://github.com/slazav?tab=repositories
+
+Most of my code is under GPL v3.0 License. Most packages contain spec
+file for Altlinux (it's my main packaging system), some have files for
+building packages for Gentoo (thanks to @suntar) and Ubuntu.
 
 My website (mostly travel reports and photos): https://slazav.xyz/
 
