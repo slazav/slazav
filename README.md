@@ -2,8 +2,13 @@
 
 #### Low-temperature physics
 
-* Measurement system (was used in low-temperature experiments in Helsinki and
-  Lancaster)
+At the moment all these projects are almost abandoned because
+unfortunately I do not have any position in helium-3 science anymore. If
+you have any suggestions, any spare wet cryostat which I can rebuild and
+use, please let me know!
+
+* Measurement system (was used in superfluid Helium-3 experiments in
+Helsinki and Lancaster)
 
   * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send commands to local and remote devices and programs without any knowledge about connection details
   * [graphene](https://github.com/slazav/graphene) -- A simple time series database based on BerkleyDB
@@ -16,14 +21,18 @@
   * [tcl-xblt](https://github.com/slazav/tcl-xblt) -- tcl-xblt library from ROTA group
   * [tcl-gpib](https://github.com/slazav/tcl-gpib) -- tcl-gpib library from ROTA group (I'm not using it because Device2 server directly works with libgpib)
   * [tcl-bf2gr](https://github.com/slazav/tcl-bf2gr) -- parse Bluefors/CryoMech/Magnicon logfiles, put data into graphene database
+  * [alt2deb](https://github.com/slazav/alt2deb) -- Scripts for building deb packages - this was used for deploying the measurement system on Debian/Ubuntu
 
 * Data processing
+
   * [py_fit_res](https://github.com/slazav/py_fit_res) -- python library for fitting linear and non-linear resonances
   * [fit_res](https://github.com/slazav/fit_res) -- Fast command-line tool for fitting linear resonances
   * [data_filter](https://github.com/slazav/data_filter) -- A smart filter for telemetry data
+
 * Numerical simulation
+
   * [he3lib](https://github.com/slazav/he3lib) -- He3 calculator, C/F/matlab/octave/cmdline interfaces
-  * [he3vmcw](https://github.com/slazav/he3vmcw) -- 1D Legget-Takagi equation solver
+  * [he3vmcw](https://github.com/slazav/he3vmcw) -- 1D Legget-Takagi equation solver (based on V.Dmitriev's code)
   * [he3text1r](https://github.com/slazav/he3text1r) -- He3-B 1D radial texture calculation. F/C/matlab/octave interfaces
   * [he3cad](https://github.com/slazav/he3cad) -- Cadabra scripts - energies in He3-B
   * [he3en](https://github.com/slazav/he3en) -- Collection of matlab/octave scripts for testing various 3He-B energies
@@ -33,6 +42,11 @@
   * [LIM](https://github.com/slazav/LIM) -- Larkin-Imry-Ma state toy simulations
 
 #### Maps
+
+I'm making hiking maps more then 20 years. Two main projects are maps of
+Moscow region (related to MMB orienteering event) and maps of mountain
+regions. Nowdays I'm not very active with Moscow maps (but MMB team
+still is). Mountain maps are updated quite regularly.
 
 Maps can be viewed online [here](https://nakarte.me/#m=3/45.33670/73.47656&l=E/Q/Z).
 More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.xyz/maps/index.htm).
@@ -44,10 +58,10 @@ More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.
 * [alos_overlay](https://github.com/slazav/alos_overlay) -- fixing ALOS DEM data
 
 #### Misc
+
 * [addphoto](https://github.com/slazav/addphoto) -- Script for making html texts with photos (for slazav.xyz site)
 * [bresenham](https://github.com/slazav/bresenham) -- description of Bresenham algorithm (line, circle), comments in Russian
 * [akk](https://github.com/slazav/akk) -- An old program for visualizing guitar chords
-* [alt2deb](https://github.com/slazav/alt2deb) -- Scripts for building deb packages
 
 All Github projects: https://github.com/slazav?tab=repositories
 
