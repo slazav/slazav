@@ -56,6 +56,7 @@ More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.
 * [map_hr](https://github.com/slazav/map_hr) -- Sources for mountain maps
 * [map_podm](https://github.com/slazav/map_podm) -- Sources for Moscow maps
 * [alos_overlay](https://github.com/slazav/alos_overlay) -- fixing ALOS DEM data
+* [py_patcher](https://github.com/slazav/py_patcher) -- Garmin firmware patcher
 
 #### Misc
 
