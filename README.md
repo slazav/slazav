@@ -55,6 +55,7 @@ More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.
 * [mapsoft2-libs](https://github.com/slazav/mapsoft2-libs) -- libraries for mapsoft2 and other projects
 * [map_hr](https://github.com/slazav/map_hr) -- Sources for mountain maps
 * [map_podm](https://github.com/slazav/map_podm) -- Sources for Moscow maps
+* [map_fi](https://github.com/slazav/map_fi) -- Custom render of MML map of Finland
 * [alos_overlay](https://github.com/slazav/alos_overlay) -- fixing ALOS DEM data
 * [py_patcher](https://github.com/slazav/py_patcher) -- Garmin firmware patcher
 
