@@ -5,32 +5,30 @@
 At the moment all these projects are almost abandoned because
 unfortunately I do not have any position in helium-3 science anymore. If
 you have any suggestions, any spare wet cryostat which I can rebuild and
-use, please let me know!
+use for my projects, please let me know!
 
-* Measurement system (was used in superfluid Helium-3 experiments in
+* Measurement system (used in a few superfluid Helium-3 experiments in
 Helsinki and Lancaster)
 
-  * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send commands to local and remote devices and programs without any knowledge about connection details
-  * [graphene](https://github.com/slazav/graphene) -- A simple time series database based on BerkleyDB
+  * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send and monitor commands to local and remote devices and programs without collisions and without any knowledge about connection details. Support for various serial devices,  usbtmc, gpib, vxi, etc.
+  * [graphene](https://github.com/slazav/graphene) -- A simple time series database based on BerkleyDB. Sub-second precision, calibration filters, graphana backend, etc.
   * [pico_osc](https://github.com/slazav/pico_osc) -- SPP interface for Picoscope 4000 oscilloscope (can be connected to device2). Programs for manipulating recorded signals (probably, should be moved to a separate package)
   * [spp-picoadc](https://github.com/slazav/spp-picoadc) -- SPP interface for Pico ADC devices
   * [spp-nidaq](https://github.com/slazav/spp-nidaq) -- SPP interface to NI DAQ devices (via NIDAQmx library)
   * [spp-ads1115](https://github.com/slazav/spp-ads1115) -- SPP interface to ADS1113/1114/1115 ADC converter
-  * [tcl-device_role](https://github.com/slazav/tcl-device_role) -- DeviceRole library, standard drivers for devices
-  * [tcl-exp](https://github.com/slazav/tcl-exp) -- TCL/TK based GUI for experiments
+  * [tcl-device_role](https://github.com/slazav/tcl-device_role) -- DeviceRole library, standard high-level drivers for devices. Each device can have a custom GUI widget, custom setup parameters, and role-specific interface. With this interface it can be embedded into a measurement interface and easily replaces with any other device model if needed
+  * [tcl-exp](https://github.com/slazav/tcl-exp) -- TCL/TK-based GUI for experiments
   * [tcl-xblt](https://github.com/slazav/tcl-xblt) -- tcl-xblt library from ROTA group
-  * [tcl-gpib](https://github.com/slazav/tcl-gpib) -- tcl-gpib library from ROTA group (I'm not using it because Device2 server directly works with libgpib)
+  * [tcl-gpib](https://github.com/slazav/tcl-gpib) -- tcl-gpib library from ROTA group (I'm not using it now because Device2 server directly works with libgpib)
   * [tcl-bf2gr](https://github.com/slazav/tcl-bf2gr) -- parse Bluefors/CryoMech/Magnicon logfiles, put data into graphene database
   * [alt2deb](https://github.com/slazav/alt2deb) -- Scripts for building deb packages - this was used for deploying the measurement system on Debian/Ubuntu
 
 * Data processing
-
   * [py_fit_res](https://github.com/slazav/py_fit_res) -- python library for fitting linear and non-linear resonances
   * [fit_res](https://github.com/slazav/fit_res) -- Fast command-line tool for fitting linear resonances
-  * [data_filter](https://github.com/slazav/data_filter) -- A smart filter for telemetry data
+  * [data_filter](https://github.com/slazav/data_filter) -- A smart filter for telemetry data (at the moment I'm not that happy about it, but it works for me)
 
 * Numerical simulation
-
   * [he3lib](https://github.com/slazav/he3lib) -- He3 calculator, C/F/matlab/octave/cmdline interfaces
   * [he3vmcw](https://github.com/slazav/he3vmcw) -- 1D Legget-Takagi equation solver (based on V.Dmitriev's code)
   * [he3text1r](https://github.com/slazav/he3text1r) -- He3-B 1D radial texture calculation. F/C/matlab/octave interfaces
@@ -55,14 +53,19 @@ More information and other formats (Garmin, Osmand, etc.) [here](https://slazav.
 * [mapsoft2-libs](https://github.com/slazav/mapsoft2-libs) -- libraries for mapsoft2 and other projects
 * [map_hr](https://github.com/slazav/map_hr) -- Sources for mountain maps
 * [map_podm](https://github.com/slazav/map_podm) -- Sources for Moscow maps
-* [map_fi](https://github.com/slazav/map_fi) -- Custom render of MML map of Finland
+* [map_fi](https://github.com/slazav/map_fi) -- Custom render of Finland/Sweeden/Norway map, based on open-source data
 * [alos_overlay](https://github.com/slazav/alos_overlay) -- fixing ALOS DEM data
 * [py_patcher](https://github.com/slazav/py_patcher) -- Garmin firmware patcher
 
 #### Misc
 
-* [addphoto](https://github.com/slazav/addphoto) -- Script for making html texts with photos (for slazav.xyz site)
-* [bresenham](https://github.com/slazav/bresenham) -- description of Bresenham algorithm (line, circle), comments in Russian
+* [addphoto](https://github.com/slazav/addphoto) -- Script for making
+html texts with photos (for slazav.xyz site). Simple and powerful, I'm
+very happy about it.
+
+* [bresenham](https://github.com/slazav/bresenham) -- description of
+Bresenham algorithm (line, circle), comments in Russian
+
 * [akk](https://github.com/slazav/akk) -- An old program for visualizing guitar chords
 
 All Github projects: https://github.com/slazav?tab=repositories
