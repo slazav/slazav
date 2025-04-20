@@ -10,12 +10,13 @@ use for my projects, please let me know!
 * Measurement system (used in a few superfluid Helium-3 experiments in
 Helsinki and Lancaster)
 
-  * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send and monitor commands to local and remote devices and programs without collisions and without any knowledge about connection details. Support for various serial devices,  usbtmc, gpib, vxi, etc.
+  * [device2](https://github.com/slazav/device2) -- Server for accessing devices and programs in experimental setup. This is the central part of the measurement system which allows to send and monitor commands to local and remote devices and programs without collisions and without any knowledge about connection details. Support for various serial devices, usbtmc, gpib, vxi, SPP, etc.
   * [graphene](https://github.com/slazav/graphene) -- A simple time series database based on BerkleyDB. Sub-second precision, calibration filters, graphana backend, etc.
-  * [pico_osc](https://github.com/slazav/pico_osc) -- SPP interface for Picoscope 4000 oscilloscope (can be connected to device2). Programs for manipulating recorded signals (probably, should be moved to a separate package)
+  * [sig-tools](https://github.com/slazav/sig-tools) -- Tools for working with SIG data format
+  * [pico_osc](https://github.com/slazav/spp_picoosc) -- SPP interface for Picoscope 4000 oscilloscope (can be connected to device2)
   * [spp-picoadc](https://github.com/slazav/spp-picoadc) -- SPP interface for Pico ADC devices
-  * [spp-nidaq](https://github.com/slazav/spp-nidaq) -- SPP interface to NI DAQ devices (via NIDAQmx library)
-  * [spp-ads1115](https://github.com/slazav/spp-ads1115) -- SPP interface to ADS1113/1114/1115 ADC converter
+  * [spp-nidaq](https://github.com/slazav/spp-nidaq) -- SPP interface for NI DAQ devices (via NIDAQmx library)
+  * [spp-ads1115](https://github.com/slazav/spp-ads1115) -- SPP interface for ADS1113/1114/1115 ADC converter
   * [tcl-device_role](https://github.com/slazav/tcl-device_role) -- DeviceRole library, standard high-level drivers for devices. Each device can have a custom GUI widget, custom setup parameters, and role-specific interface. With this interface it can be embedded into a measurement interface and easily replaces with any other device model if needed
   * [tcl-exp](https://github.com/slazav/tcl-exp) -- TCL/TK-based GUI for experiments
   * [tcl-xblt](https://github.com/slazav/tcl-xblt) -- tcl-xblt library from ROTA group
